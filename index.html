@@ -18,50 +18,50 @@ Have fun creating your portfolio on this template!!! -->
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
 
     <!-- Title: add your Portfolio websites's title here -->
-    <title>[Your name here] | Developer</title>
+    <title>Luiz Bartolassi | Developer</title>
 
     <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
-    <meta name="keywords" content="[username], [name], skill" />
+    <meta name="keywords" content="bartolek, golang, sql, backend, csharp, cloud, aws" />
 
     <!-- Improve your SEO by adding a small descrption of you -->
-    <meta name="description" content="[Your name here] | Developer" />
+    <meta name="description" content="Luiz Bartolassi | Developer" />
 
     <!-- Add a your png Logo to the assets folder and change the href attr accordingly  -->
-    <link rel="icon" type="image/png" href="./assets/devfolio-logo.png" />
+    <link rel="icon" type="image/png" href="./assets/favicon.ico" />
 
     <!-- Add your primary-theme color for the value of content -->
-    <meta name="theme-color" content="#36d1dc" />
+    <meta name="theme-color" content="#d10000" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <!-- Fill content with the URL of this portfolio you'll host -->
-    <meta property="og:url" content="https://devfolio.js.org/" />
+    <meta property="og:url" content="https://portfolio.bartolek.org/" />
     <!-- Fill content with the title of your portfolio(Recommended to use what you put in <title> tag) -->
-    <meta property="og:title" content="[Your name here] | Developer" />
+    <meta property="og:title" content="Luiz Bartolassi | Developer" />
     <!-- Give a short description that'll show up when you/someone shares your portfolio on different platform -->
-    <meta property="og:description" content="Made using DevFolio Template" />
+    <meta property="og:description" content="Meu portfólio de projetos" />
     <!-- Add a thumbnail image in assets folder and fill the content attr with URL to that thumbnail 
       so that a thumbnail image of your portfolio is shown while shared on other platform -->
     <meta
       property="og:image"
-      content="https://devfolio.js.org/assets/devfolio.png"
+      content="https://portfolio.bartolek.org/assets/devfolio.png"
     />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <!-- Again fill content attr with the URL of this portfolio you'll host -->
-    <meta property="twitter:url" content="https://devfolio.js.org" />
+    <meta property="twitter:url" content="https://portfolio.bartolek.org" />
     <!-- Recommended to use the same text used within <title> element -->
-    <meta property="twitter:title" content="[Your name here] | Developer" />
+    <meta property="twitter:title" content="Luiz Bartolassi | Developer" />
     <!-- short description that shows up while your portfolio is shared -->
     <meta
       property="twitter:description"
-      content="Made using DevFolio Template"
+      content="Meu portfólio de projetos"
     />
     <!-- Fill content with the URL to the thumbnail image that you'll put in the assets folder -->
     <meta
       property="twitter:image"
-      content="https://anilseervi.vercel.app/assets/devfolio.png"
+      content="https://portfolio.bartolek.org/assets/devfolio.png"
     />
 
     <!-- link tags -->
@@ -76,6 +76,14 @@ Have fun creating your portfolio on this template!!! -->
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <script defer src="./javascript/typed.module.js"></script>
+    <script 
+      defer
+      type="text/javascript" 
+      src="./javascript/typed.js"
+    ></script>
+
     <script defer src="./javascript/scrollreveal.min.js"></script>
     <script
       defer
@@ -83,35 +91,23 @@ Have fun creating your portfolio on this template!!! -->
       src="./javascript/scrollveal.js"
     ></script>
 
-    <!-- Remove Google Analytics once you have your portfolio website set-up -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-122228201-4"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || []
-      function gtag() {
-        dataLayer.push(arguments)
-      }
-      gtag("js", new Date())
+    <!-- Devicons link -->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    
 
-      gtag("config", "UA-122228201-4")
-    </script>
-    <!-- End of Google Analytics -->
   </head>
   <body>
     <!-- Hero Section -->
     <div id="hero">
       <section class="container">
         <h1 class="hero-title">
-          Hi, my name is <span class="text-color-main name">Your Name</span>
+          Olá, meu nome é <span class="text-color-main name">Luiz Bartolassi</span>
           <br />
-          I'm the Unknown Developer.
+          Sou desenvolvedor back-end.
         </h1>
-        <p class="hero-cta">
-          <a class="cta-btn cta-btn--hero" href="#about">Get in touch</a>
-        </p>
+        <!-- <p class="hero-cta">
+          <a class="cta-btn cta-btn--hero" href="#about">Ver mais</a>
+        </p> -->
       </section>
       <a href="#about" class="scroll-down-link" aria-label="scroll-down">
         <div class="scroll-down"></div
@@ -122,12 +118,19 @@ Have fun creating your portfolio on this template!!! -->
     <!-- About Section -->
     <section id="about">
       <div class="container">
-        <h2 class="section-title">About Me</h2>
+        <!-- <h2 class="section-title">Sobre</h2> -->
+        
+        <!-- Typedjs container -->
+        <div id="typed-container">
+          <span id="typed" class=""></span>
+        </div>
+        
+        
         <div class="row about-wrapper">
           <div class="about-wrapper__image">
             <img
               class="img-fluid"
-              src="./assets/profile.png"
+              src="./assets/profile-350.jpg"
               alt="Profile Image"
               width="450"
               height="350"
@@ -135,20 +138,17 @@ Have fun creating your portfolio on this template!!! -->
           </div>
           <div class="about-wrapper__info">
             <p class="about-wrapper__info-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Temporibus quae repellat, ad omnis distinctio velit saepe expedita
-              architecto cumque veritatis adipisci. Sapiente non, saepe hic
-              adipisci doloribus quisquam recusandae et.
+              Estudante de Engenharia da Computação na <a href="https://faculdadesalvadorarena.org.br/site/" target="_blank">FESA</a> com uma forte paixão pela comunidade de código-aberto. Tenho interesse em
+              Arquitetura e Modelagem de Software, onde busco criar estruturas eficientes e escaláveis para resolver problemas.
             </p>
             <p class="about-wrapper__info-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
-              obcaecati doloribus qui praesentium quae veniam esse mollitia
-              consequuntur nisi minima quasi et fugit quidem enim recusandae
-              delectus, iusto culpa rerum?
+              Além disso, estou focado em Cloud Computing e áreas correlatas, onde estudo a integração de sistemas e a otimização de
+              recursos em ambientes distribuídos. Minha jornada inclui o aperfeiçoamento contínuo em Cybersecurity, garantindo
+              comunicação segura e eficaz entre sistemas. 
             </p>
-            <span class="about-wrapper__cta">
-              <a href="#" class="cta-btn cta-btn--resume">View Resume</a>
-            </span>
+            <!-- <span class="about-wrapper__cta">
+              <a href="https://drive.google.com/file/d/1Eo_sp4FB5YdKxP6R2SGiaJb9NiSTERZj/view?usp=sharing" class="cta-btn cta-btn--resume">Ver currículo</a>
+            </span> -->
           </div>
         </div>
       </div>
@@ -159,110 +159,59 @@ Have fun creating your portfolio on this template!!! -->
     <section id="projects">
       <div class="container">
         <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">Projects</h2>
-
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Project Title</h3>
-              <p class="project-wrapper__text-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deleniti voluptas, sit nam perspiciatis tempore aspernatur ullam
-                necessitatibus impedit repellendus vero sed ipsa eos beatae ab
-                sint saepe nostrum! Enim, perferendis.
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >See Live</a
-                >
-                <a href="#" target="_blank" class="cta-btn text-color-main"
-                  >Source Code</a
-                >
-              </div>
-            </div>
-
-            <div class="project-wrapper__image">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/project.png"
-                    class="img-fluid"
-                    alt="Project Image"
-                    width="1366"
-                    height="767"
-                  />
+          <h2 class="section-title dark-blue-text">Projetos</h2>
+            <!-- Each .row is a project -->
+            <article class="row">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Binary Game</h3>
+                <p class="project-wrapper__text-info">
+                  Desenvolvendo a web API de um jogo online em tempo real para estimular o
+                  treino de operações com números de bases distintas, utilizando
+                  microserviços e Clean Architecture como estrutura de projeto.
+                </p>
+                <div class="project-wrapper__stack">
+                  <i class="project-wrapper__stack-item devicon-go-original-wordmark colored"></i>
+                  <i class="project-wrapper__stack-item devicon-grpc-plain colored"></i>
+                  <i class="project-wrapper__stack-item devicon-redis-plain colored"></i>
+                  <i class="project-wrapper__stack-item devicon-kubernetes-plain colored"></i>
+                  <i class="project-wrapper__stack-item devicon-nextjs-original-wordmark colored"></i>
                 </div>
-              </a>
-            </div>
-          </article>
-          <!-- /END Project -->
-
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Project Title</h3>
-              <p class="project-wrapper__text-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deleniti voluptas, sit nam perspiciatis tempore aspernatur ullam
-                necessitatibus impedit repellendus vero sed ipsa eos beatae ab
-                sint saepe nostrum! Enim, perferendis.
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >See Live</a
-                >
-                <a href="#" target="_blank" class="cta-btn text-color-main"
-                  >Source Code</a
-                >
-              </div>
-            </div>
-
-            <div class="project-wrapper__image">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/project.png"
-                    class="img-fluid"
-                    alt="Project Image"
-                    width="1366"
-                    height="767"
-                  />
+                <div class="project-wrapper__text-btns">
+                  <a href="https://gitlab.com/binarygame" target="_blank" rel="noopener noreferrer"
+                    class="cta-btn cta-btn--hero cta-btn--projects">Repositório</a>
+                  <a href="https://bingame-dev.zerowhy.org" target="_blank" class="cta-btn text-color-main">Experimentar</a>
                 </div>
-              </a>
-            </div>
-          </article>
-          <!-- /END Project -->
+              </div>
 
+              <div class="project-wrapper__image">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <div class="thumbnail rounded">
+                    <img src="./assets/project.png" class="img-fluid" alt="Project Image" width="1366" height="767" />
+                  </div>
+                </a>
+              </div>
+            </article>
+            <!-- /END Project -->
+             
           <!-- Each .row is a project -->
           <article class="row">
             <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Project Title</h3>
+              <h3 class="project-wrapper__text-title">REST Gourmet</h3>
               <p class="project-wrapper__text-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deleniti voluptas, sit nam perspiciatis tempore aspernatur ullam
-                necessitatibus impedit repellendus vero sed ipsa eos beatae ab
-                sint saepe nostrum! Enim, perferendis.
+                Aplicação CRUD monolítica destinada à administração de restaurantes, que
+                consiste em uma API Restful comunicando-se com um portal web.
               </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >See Live</a
-                >
-                <a href="#" target="_blank" class="cta-btn text-color-main"
-                  >Source Code</a
-                >
+              <div class="project-wrapper__stack">
+                <i class="project-wrapper__stack-item devicon-dotnetcore-plain colored" title=".NET Core"/></i>
+                <i class="project-wrapper__stack-item devicon-microsoftsqlserver-plain colored"></i>
+                <i class="project-wrapper__stack-item devicon-react-plain colored "></i>
               </div>
+              <div class="project-wrapper__text-btns">
+                <a href="https://github.com/bartolek153/rest-gourmet" target="_blank" rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects">Repositório</a>
+                <!-- <a href="#" target="_blank" class="cta-btn text-color-main">Experimentar</a> -->
+              </div>
+
             </div>
 
             <div class="project-wrapper__image">
@@ -288,10 +237,16 @@ Have fun creating your portfolio on this template!!! -->
     <!-- Contact Section -->
     <section id="contact">
       <div class="container">
-        <h2 class="section-title">Contact</h2>
+        <h2 class="section-title">Contato</h2>
         <div class="contact-wrapper">
-          <p class="contact-wrapper__text">[Put your call to action here]</p>
-          <a href="#" class="cta-btn cta-btn--resume">Call to Action</a>
+          <p class="contact-wrapper__text">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            +55 (11) 94280-5542
+          </p>
+          <a href="mailto:luizekbartolassi@gmail.com?subject=Oportunidade de Colaboração&body=Olá, Luiz." class="cta-btn cta-btn--resume">
+            <i class="fa-regular fa-envelope"></i>
+            luizekbartolassi@gmail.com
+          </a>
         </div>
       </div>
     </section>
@@ -305,31 +260,7 @@ Have fun creating your portfolio on this template!!! -->
         </a>
         <div class="social-links">
           <a
-            href="#!"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="twitter"
-          >
-            <i class="fa-brands fa-twitter"></i>
-          </a>
-          <a
-            href="#!"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="instagram"
-          >
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-          <a
-            href="#!"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="codepen"
-          >
-            <i class="fa-brands fa-codepen"></i>
-          </a>
-          <a
-            href="#!"
+            href="https://linkedin.com/in/luizekbartolassi"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="linkedin"
@@ -337,12 +268,19 @@ Have fun creating your portfolio on this template!!! -->
             <i class="fa-brands fa-linkedin"></i>
           </a>
           <a
-            href="#!"
+            href="https://github.com/bartolek153"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="github"
           >
             <i class="fa-brands fa-github"></i>
+          </a>
+          <a 
+            href="https://gitlab.com/bartolek153"
+            target="_blank" 
+            rel="noopener noreferrer" 
+            aria-label="gitlab">
+            <i class="fa-brands fa-gitlab"></i>
           </a>
         </div>
         <hr />
@@ -353,7 +291,7 @@ Have fun creating your portfolio on this template!!! -->
             target="_blank"
             rel="noopener noreferrer"
             >Anil Seervi</a
-          >. <br />Made with &hearts;
+          >. 
         </p>
       </div>
     </footer>
@@ -364,5 +302,6 @@ Have fun creating your portfolio on this template!!! -->
     </script>
     <script src="./javascript/vanilla-tilt.min.js"></script>
     <script type="text/javascript" src="./javascript/valtilt.js"></script>
+
   </body>
 </html>

@@ -25,6 +25,18 @@ a:hover {
   }
 }
 
+#typed-container {
+  margin-bottom: 4.8rem;
+}
+
+#typed, .typed-cursor {
+  font-family: 'monospace', sans-serif !important;
+  font-size: 3rem;
+  @include respond(phone) {
+    font-size: 1.7rem;
+  }
+}
+
 .dark-blue-color {
   color: $dark-blue-text;
 }

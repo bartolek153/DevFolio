@@ -50,6 +50,11 @@
         align-items: center;
         text-align: center;
       }
+
+      a {
+        color: inherit;
+        text-decoration: underline;
+      }
     }
   }
 }

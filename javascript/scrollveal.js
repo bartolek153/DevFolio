@@ -30,11 +30,13 @@ ScrollReveal().reveal(".scroll-down-link", {
 });
 
 /* About Section */
-ScrollReveal().reveal(".section-title", {
+ScrollReveal().reveal("#about", {
   ...defaultProps,
-  delay: 400,
+  delay: 300,
   distance: "0px",
+  afterReveal: function (el) { typed2.start(); }
 });
+
 ScrollReveal().reveal(".about-wrapper__image", {
   ...defaultProps,
   delay: 600,
